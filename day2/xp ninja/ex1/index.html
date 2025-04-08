@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Giphy Search</title>
+    <style>
+        #gifs-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        img {
+            max-width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Giphy Search</h1>
+    <form id="search-form">
+        <input type="text" id="search-input" placeholder="Search GIFs...">
+        <button type="submit">Search</button>
+    </form>
+    <button id="delete-all">Delete All GIFs</button>
+    <div id="gifs-container"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>

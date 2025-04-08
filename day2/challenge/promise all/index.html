@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heure du lever du soleil</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        #results {
+            margin-top: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .city-result {
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Comparateur d'heure de lever du soleil</h1>
+    
+    <form id="sunriseForm">
+        <h2>Ville 1</h2>
+        <div class="form-group">
+            <label for="lat1">Latitude:</label>
+            <input type="text" id="lat1" required placeholder="Ex: 48.8566 (Paris)">
+        </div>
+        <div class="form-group">
+            <label for="lng1">Longitude:</label>
+            <input type="text" id="lng1" required placeholder="Ex: 2.3522 (Paris)">
+        </div>
+
+        <h2>Ville 2</h2>
+        <div class="form-group">
+            <label for="lat2">Latitude:</label>
+            <input type="text" id="lat2" required placeholder="Ex: 40.7128 (New York)">
+        </div>
+        <div class="form-group">
+            <label for="lng2">Longitude:</label>
+            <input type="text" id="lng2" required placeholder="Ex: -74.0060 (New York)">
+        </div>
+
+        <button type="submit">Afficher les heures de lever</button>
+    </form>
+
+    <div id="results"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

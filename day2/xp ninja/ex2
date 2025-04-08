@@ -1,0 +1,7 @@
+(après 1s) ==CONCURRENT START with Promise.all==
+starting slow promise
+starting fast promise
+(après 1s supplémentaire) fast promise is done
+(après 2s) slow promise is done
+slow
+fast

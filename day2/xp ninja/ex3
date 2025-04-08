@@ -1,0 +1,7 @@
+(après 5s) ==PARALLEL with await Promise.all==
+starting slow promise
+starting fast promise
+(après 1s) fast promise is done
+fast
+(après 2s) slow promise is done
+slow

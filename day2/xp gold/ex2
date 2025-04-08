@@ -1,0 +1,7 @@
+==SEQUENTIAL START==
+starting slow promise
+(après 2s) slow promise is done
+slow
+starting fast promise
+(après 1s supplémentaire) fast promise is done
+fast

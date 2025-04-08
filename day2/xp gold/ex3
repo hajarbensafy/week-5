@@ -1,0 +1,7 @@
+(après 4s) ==CONCURRENT START with await==
+starting slow promise
+starting fast promise
+(après 1s) fast promise is done
+(après 2s) slow promise is done
+slow
+fast
