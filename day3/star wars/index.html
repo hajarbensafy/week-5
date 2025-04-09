@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Wars Characters</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Star Wars Characters</h1>
+            <button id="fetchBtn">Get Random Character</button>
+        </header>
+        
+        <main>
+            <div id="loading" class="hidden">
+                <i class="fas fa-spinner fa-spin"></i>
+                <p>Loading...</p>
+            </div>
+            
+            <div id="error" class="hidden">
+                <i class="fas fa-exclamation-triangle"></i>
+                <p>Oh no! That person isn't available.</p>
+            </div>
+            
+            <div id="characterInfo" class="hidden">
+                <div class="character-header">
+                    <h2 id="characterName"></h2>
+                </div>
+                <div class="character-details">
+                    <p><span class="label">Height:</span> <span id="characterHeight"></span></p>
+                    <p><span class="label">Gender:</span> <span id="characterGender"></span></p>
+                    <p><span class="label">Birth Year:</span> <span id="characterBirthYear"></span></p>
+                    <p><span class="label">Homeworld:</span> <span id="characterHomeworld"></span></p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

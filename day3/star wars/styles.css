@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212;
+    color: #f0f0f0;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #444;
+}
+
+h1 {
+    font-family: 'Orbitron', sans-serif;
+    color: #ffe81f;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+
+button {
+    background-color: #ffe81f;
+    color: #000;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Orbitron', sans-serif;
+}
+
+button:hover {
+    background-color: #ffd700;
+    transform: scale(1.05);
+}
+
+main {
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#loading, #error {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+#loading i, #error i {
+    font-size: 3rem;
+    color: #ffe81f;
+}
+
+#characterInfo {
+    width: 100%;
+    max-width: 500px;
+    background-color: #2a2a2a;
+    padding: 25px;
+    border-radius: 8px;
+    border-left: 5px solid #ffe81f;
+}
+
+.character-header {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #444;
+}
+
+.character-header h2 {
+    color: #ffe81f;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.character-details p {
+    margin-bottom: 10px;
+}
+
+.label {
+    font-weight: bold;
+    color: #aaa;
+    display: inline-block;
+    width: 120px;
+}
+
+.hidden {
+    display: none !important;
+}
